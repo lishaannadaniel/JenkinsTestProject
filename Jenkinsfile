@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('Compile'){
             steps{
+		bat 'C:\GithubProjects\JenkinsTestProject\TestDeploy.bat'
                 echo "Stage Complile Reached";
             }
         }
