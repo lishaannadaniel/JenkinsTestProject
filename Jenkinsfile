@@ -2,8 +2,7 @@ pipeline{
     agent any
     stages{
         stage('Compile'){
-            steps{ 
-		bat 'TestDeploy.bat'
+            steps{
                 echo "Stage Complile Reached";
             }
         }
