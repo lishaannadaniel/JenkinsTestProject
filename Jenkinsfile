@@ -2,7 +2,11 @@ pipeline{
     agent any
     stages{
         stage('Compile'){
+	environment {
+		PATH = "C:\\WINDOWS\\SYSTEM32"
+		}
             steps{
+		bat 'TestDeploy.bat'
                 echo "Stage Complile Reached";
             }
         }
