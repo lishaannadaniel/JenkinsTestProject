@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('Compile'){
             steps{
+                bat 'TestDeploy.bat';
                 echo "Stage Complile Reached";
             }
         }
